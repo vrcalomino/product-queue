@@ -6,8 +6,19 @@ The other consumes the queue, fetches the product information and sends an email
 ## Run the project!
 
 There are two available ways to run the project. I'd recommend doing it with docker since it's easier.
+First you'll have to set up 2 .env files in each folder, I left you a python script that creates them.
+
+Run:
+```shell
+python3 .\createEnvFiles.py host=rabbitMQ port=5672 username=guest password=guest email={email} email_password=
+{app_password}
+```
+
+Note: The email provided will be the one sending the email, and the password needed to run this app is an 
+application password which you can get [here](https://support.google.com/mail/answer/185833?hl=es-419).
 
 ### Local:
+
 I'll leave you steps to run the project manually:
 
 1. Run rabbitMQ server locally
