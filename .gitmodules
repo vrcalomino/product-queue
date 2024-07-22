@@ -1,0 +1,6 @@
+[submodule "product-request"]
+	path = product-request
+	url = https://github.com/vrcalomino/product-request.git
+[submodule "product-receiver"]
+	path = product-receiver
+	url = https://github.com/vrcalomino/product-receiver.git
